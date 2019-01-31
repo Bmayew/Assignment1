@@ -26,7 +26,7 @@ $ git log -1 --format=="%ad" -- .gitignore
 
 (e)
 $ git log : shows the commit logs
-$ git status : shows no information with respect to commits to the repository. Presents the entire status (currently) of the 					   working tree (directory) by displaying information on staged files and files that aren't recognized by Git.
+$ git status : shows no information with respect to commits to the repository. Presents the entire status (currently) of the working tree (directory) by displaying information on staged files and files that aren't recognized by Git.
 
 (f)
 Command:
@@ -49,11 +49,14 @@ to prevent fatal errors or erroneous results. A strong analogy is to think of a 
 
 (i)
 The main difference between "Integration Management" workflow and the "Dictator and Lieutenants" workflow
-is that the latter is more ideal for large teams, where the "Dictator" pushes a public repository for the developers to branch from and the "Lieutenants" merge the developer's branch with the master when it is up to standards, then that is sent to the "Dictator" who will push it to the public repository. Integration Management workflows entail the developers clone the public repository pushed by the "Integration Manager," then push any changed to their cloned repositories. Then the changes are pulled by the manager and merged, then pushed to the public repository. The "Dictator" essentially assumes the role of the "Integration Manager" and the "Lieutenants" are the only ones capable of passing code to the "dictator," acting as the buffer that public repositories represent in an Integration Management workflow. Furthermore, Lieutenants are typically split across several projects, each handling a specific task through their respective development teams. 
+is that the latter is more ideal for large teams, where the "Dictator" pushes a public repository for the developers to branch from and 
+the "Lieutenants" merge the developer's branch with the master when it is up to standards, then that is sent to the "Dictator" who will push it to the public repository. 
+Integration Management workflows entail the developers clone the public repository pushed by the "Integration Manager," then push any changed to their cloned repositories. Then the changes are pulled by the manager and merged, then pushed to the public repository. 
+The "Dictator" essentially assumes the role of the "Integration Manager" and the "Lieutenants" are the only ones capable of passing code to the "dictator," acting as the buffer that public repositories represent in an Integration Management workflow. 
+Furthermore, Lieutenants are typically split across several projects, each handling a specific task through their respective development teams. 
 
 (j)
 The "Dictator and Lieutenants" workflow being better suited for larger teams boils down to that fact that having only one integration manager can result in an influx of branch code developers requesting approval
 to push code to the main repository, which in the case of 100 developers, would be nearly impossible for
 one manager to maintain. Having Lieutenants in place essentially acts as a buffer or bottleneck to 
 distribute the management responsibilities more evenly.
- 			   
