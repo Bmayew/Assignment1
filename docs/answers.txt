@@ -1,0 +1,49 @@
+(a) 
+Enumerating objects: 11, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 832 bytes | 832.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/Bmayew/Assignment1.git
+   3d373c9..fc60c49  master -> master
+
+(b) 
+Number of commits done to the repository: 6
+Command:
+$ git rev-list --all --count
+
+(c)
+.gitignore last modified: Thu Jan 10 16:45:38 2019
+Command:
+$ git log -1 --format=="%ad" -- .gitignore
+
+(d)
+	(1.d) Branches allow developers to split (branch) off from a series of commits (the "master branch") and write separate, often,
+	experimental features or software elements, separate from the main chain of commits.
+	(2.d) Branching has no storage/memory overhead, so it is common practice to do it early and often.
+
+(e)
+$ git log : shows the commit logs
+$ git status : shows no information with respect to commits to the repository. Presents the entire status (currently) of the 					   working tree (directory) by displaying information on staged files and files that aren't recognized by Git.
+
+(f)
+Command:
+$ git log --follow -- Weapon.h
+
+(g)
+Command:
+$ git log --grep=file
+
+(h)
+In order to be considered a true object-oriented language, all three of these concepts must be supported.
+Inheritance: comprised of two main features, a superclass and a class derived from the superclass, called a subclass. The superclass will pass along all of its attributes and methods to the subclass. Commonly
+described as an "is-a" relationship.
+Polymorphism: allows for an object to assume several different roles/types. A parent class Shape can 
+be used to reference child classes Circle, Square, Rectangle, Triangle, etc.
+Encapsulation: revolves around the concept implementation versus interface. Data encapsulation is designed to layer and pack a program in such a way that lower "levels" cannot access data from 
+higher "levels" directly. The data can only be interacted with via accessor and mutator
+methods within those higher level classes. Essentially things irrelevant to the user are hidden in order 
+to prevent fatal errors or erroneous results. A strong analogy is to think of a car driver interacting with the dashboard, but having no idea of the details behind the dashboard.
+			   
