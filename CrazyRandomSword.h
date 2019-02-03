@@ -7,6 +7,7 @@
 //****************************************************************//
 
 #include <string>
+#include <cstdlib>
 #include "Weapon.h"
 
 #ifndef CRAZYRANDOMSWORD_H
@@ -19,13 +20,14 @@
  */
 class CrazyRandomSword : public Weapon {
 public:
-
-    CrazyRandomSword() : Weapon("Crazy Random Sword", 25.0) { //Calls Weapon(name, hitpoints) constructor with values Simple Hammer 25hp
+    CrazyRandomSword() : Weapon("Crazy Random Sword", 0) { //Calls Weapon(name, hitpoints) constructor with values Simple Hammer 25hp
     }
 
     virtual ~CrazyRandomSword() {};
 
     virtual double hit(double armor);
+
+
 
 };
 
