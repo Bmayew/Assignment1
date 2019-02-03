@@ -30,3 +30,4 @@ public:
 };
 
 #endif /* CRAZYRANDOMSWORD_H */
+
