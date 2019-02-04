@@ -1,3 +1,10 @@
+//****************************************************************//
+// Braden Mayew                                                   //
+// CEN 4020                                                       //
+// Sonia Haiduc                                                   //
+// Assignment 1                                                   //
+// ------------------------- main.cpp --------------------------- //
+//****************************************************************//
 
 /* 
  * File:   main.cpp
@@ -36,6 +43,18 @@ int main(int argc, char** argv) {
     delete(weapon);
 
     weapon = WeaponFactory::getInstance()->getWeapon("spear");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("hammer");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("randomSword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("superSword");
     simulateWeapon(weapon, armor);
     delete(weapon);
 
