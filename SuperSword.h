@@ -19,7 +19,7 @@
  */
 class SuperSword : public Weapon {
 public:
-    SuperSword() : Weapon("SuperSword", 50) { //Calls Weapon(name, hitpoints) constructor with values Simple Hammer 25hp
+    SuperSword() : Weapon("SuperSword", 20) { //Calls Weapon(name, hitpoints) constructor with values Simple Hammer 25hp
     }
 
     virtual ~SuperSword() {};
