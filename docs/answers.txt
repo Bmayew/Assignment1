@@ -60,3 +60,11 @@ The "Dictator and Lieutenants" workflow being better suited for larger teams boi
 to push code to the main repository, which in the case of 100 developers, would be nearly impossible for
 one manager to maintain. Having Lieutenants in place essentially acts as a buffer or bottleneck to 
 distribute the management responsibilities more evenly.
+
+
+// ---- Section 5 ---- //
+(5.RoleGame OOP principles)
+To begin, polymorphism is apparent. The "is-a" relationship is seen with the interaction between the 
+Weapons class and its subclasses: CommonSword, CommonSpear, SimpleHammer, CrazyRandomSword, and SuperSword. Secondly, encapsulation is also present in this RoleGame. The WeaponFactory encapsulates the Weapon class. No matter which type of Weapon passed to the WeaponFactory, the WeaponFactory always processes the objects the same, as "Weapon".
+
+
